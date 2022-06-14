@@ -10,6 +10,8 @@ public class Main {
     public static void main(String[] args) {
 
        EntityManager entityManager = SessionHelper.getEntityManager();
+       //action with jpa
+       entityManager.close();
 
     }
 }
