@@ -1,5 +1,6 @@
 package fr.m2i.crm;
 
+import fr.m2i.crm.dao.CustomerDAO;
 import fr.m2i.crm.helper.SessionHelper;
 
 import javax.persistence.EntityManager;
@@ -11,6 +12,12 @@ public class Main {
 
        EntityManager entityManager = SessionHelper.getEntityManager();
        //action with jpa
+
+        CustomerDAO customerDAO = new CustomerDAO();
+
+        //customerDAO.create();
+        //customerDAO.update();
+
        entityManager.close();
 
     }
